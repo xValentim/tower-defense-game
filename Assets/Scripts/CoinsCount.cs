@@ -6,7 +6,8 @@ public class CoinsCount : MonoBehaviour
 {
     public CoinManager coinManager; // Referência ao CoinManager
 
-    public TextMeshProUGUI coinsText; // Referência ao texto de moedas
+    public TextMeshProUGUI coinsText; // Referência ao texto de moeda
+
 
     void Start()
     {

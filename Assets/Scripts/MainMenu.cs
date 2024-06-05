@@ -10,8 +10,14 @@ public class MainMenu : MonoBehaviour
     void Start() 
     {
         settingsMenu.SetActive(false); // Inicia o jogo com o SettingsMenu invisível
+        if (StaticData.firstLoad == false) {
+            StaticData.gemas = 0;
+             StaticData.firstLoad = true; 
+        }
     }
+    
     public void PlayGame(){
+        // Salva o valor inicial de gemas no StaticData
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 

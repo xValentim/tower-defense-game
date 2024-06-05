@@ -11,8 +11,8 @@ public class Tower_Default : MonoBehaviour {
     [SerializeField] private Transform firingPoint;
 
     [Header("Attribute")]
-    [SerializeField] private float targetingRange = 5f;
-    [SerializeField] private float fireRate = 2f;
+    [SerializeField] public float targetingRange = 5f;
+    [SerializeField] public float fireRate = 2f;
 
     [SerializeField] private AudioSource shootSound;
 
@@ -88,5 +88,4 @@ public class Tower_Default : MonoBehaviour {
         Destroy(gameObject);
         Debug.Log("Torre destruída.");
     }
-
 }

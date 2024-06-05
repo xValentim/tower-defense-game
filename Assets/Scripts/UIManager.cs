@@ -1,13 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro; // Use esta linha se estiver usando TextMeshPro
+using TMPro;
 
 public class UIManager : MonoBehaviour
 {
     public static UIManager instance;
 
-    [SerializeField] private TextMeshProUGUI enemiesText; // Se estiver usando TextMeshPro
+    [SerializeField] private TextMeshProUGUI enemiesText;
 
     private void Awake() {
         if (instance == null) {

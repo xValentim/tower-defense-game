@@ -23,6 +23,16 @@ public class LevelManager : MonoBehaviour
         coinManager.BuyTower(amount);
     }
 
+    public void IncreaseGemas(int amount)
+    {
+        coinManager.AddGemas(amount);
+    }
+
+    public void SpendGemas(int amount)
+    {
+        coinManager.RemoveGemas(amount);
+    }
+
     public void NextLevelScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
